@@ -1,9 +1,9 @@
 // @ts-nocheck
-import type { RoleKey } from "@vada/contracts";
+import type { RoleKey } from "@mark8/contracts";
 
 const getPrismaClient = async () => {
   try {
-    const db = await import("@vada/db");
+    const db = await import("@mark8/db");
     return db.prisma;
   } catch {
     return null;
@@ -213,7 +213,7 @@ const buildFallbackSnapshot = (role: RoleKey): DashboardSnapshot => {
         id: "fallback-audit-1",
         action: "workflow_run_requested",
         resourceType: "workflow_run",
-        actorEmail: "client@demo.vada.local",
+        actorEmail: "client@demo.mark8.local",
         createdAt: new Date(Date.now() - 9_100_000).toISOString(),
       },
     ],
@@ -221,7 +221,7 @@ const buildFallbackSnapshot = (role: RoleKey): DashboardSnapshot => {
 };
 
 const getOrganizationSlug = (): string => {
-  return process.env.VADA_DEMO_ORG_SLUG ?? "demo-finops";
+  return process.env.MARK8_DEMO_ORG_SLUG ?? "demo-finops";
 };
 
 export const getDashboardSnapshot = async (

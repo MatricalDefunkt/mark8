@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Vada",
+  title: "Mark8",
   description:
     "Sell and run curated n8n workflows with RBAC, quota, and token billing.",
 };

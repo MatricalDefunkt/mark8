@@ -1,7 +1,7 @@
 const HomePage = (): JSX.Element => {
   return (
     <main>
-      <h1>Vada Prototype</h1>
+      <h1>Mark8 Prototype</h1>
       <p className="small">
         Monorepo SaaS for selling curated n8n workflows with organization-scoped
         RBAC, Stripe billing, token-based execution, and support ticketing.

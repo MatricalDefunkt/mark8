@@ -1,5 +1,5 @@
 {
-  "name": "vada",
+  "name": "mark8",
   "private": true,
   "version": "0.1.0",
   "packageManager": "bun@1.2.15",
@@ -12,9 +12,9 @@
     "build": "turbo build",
     "lint": "turbo lint",
     "typecheck": "turbo typecheck",
-    "db:generate": "bun run --filter @vada/db db:generate",
-    "db:migrate": "bun run --filter @vada/db db:migrate",
-    "db:seed": "bun run --filter @vada/db db:seed"
+    "db:generate": "bun run --filter @mark8/db db:generate",
+    "db:migrate": "bun run --filter @mark8/db db:migrate",
+    "db:seed": "bun run --filter @mark8/db db:seed"
   },
   "devDependencies": {
     "@types/node": "^25.5.2",

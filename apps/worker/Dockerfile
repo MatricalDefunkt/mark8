@@ -13,10 +13,10 @@ RUN bun install --frozen-lockfile
 
 FROM deps AS build
 COPY . .
-RUN bun run --filter @vada/worker build
+RUN bun run --filter @mark8/worker build
 
 FROM oven/bun:1.3.9 AS runner
 WORKDIR /app
 ENV NODE_ENV=production
 COPY --from=build /app .
-CMD ["bun", "run", "--filter", "@vada/worker", "start"]
+CMD ["bun", "run", "--filter", "@mark8/worker", "start"]

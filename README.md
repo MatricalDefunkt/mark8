@@ -1,4 +1,4 @@
-# Vada Monorepo
+# Mark8 Monorepo
 
 Prototype monorepo for a multi-tenant SaaS that sells pre-made n8n workflows with role-based access, plan quotas, token billing, and support ticketing.
 

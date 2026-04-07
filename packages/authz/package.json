@@ -1,5 +1,5 @@
 {
-  "name": "@vada/authz",
+  "name": "@mark8/authz",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -11,6 +11,6 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@vada/contracts": "workspace:*"
+    "@mark8/contracts": "workspace:*"
   }
 }

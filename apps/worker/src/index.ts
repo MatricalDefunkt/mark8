@@ -3,8 +3,8 @@ import { Redis } from "ioredis";
 import {
   executeWorkflowRequestSchema,
   type ExecuteWorkflowRequest,
-} from "@vada/contracts";
-import { getServerEnv } from "@vada/config";
+} from "@mark8/contracts";
+import { getServerEnv } from "@mark8/config";
 
 type WorkflowExecutionJobData = {
   workflowKey: string;

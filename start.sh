@@ -44,10 +44,10 @@ cleanup() {
 
 trap cleanup EXIT INT TERM
 
-bun run --filter @vada/web dev &
+bun run --filter @mark8/web dev &
 WEB_PID=$!
 
-bun run --filter @vada/worker dev &
+bun run --filter @mark8/worker dev &
 WORKER_PID=$!
 
 wait "$WEB_PID" "$WORKER_PID"

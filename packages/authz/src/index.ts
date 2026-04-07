@@ -1,4 +1,4 @@
-import type { RoleKey } from "@vada/contracts";
+import type { RoleKey } from "@mark8/contracts";
 
 export const permissionKeys = [
   "workflow:execute",

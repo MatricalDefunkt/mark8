@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { roleKeySchema } from "@vada/contracts";
+import { roleKeySchema } from "@mark8/contracts";
 import { getDashboardSnapshot } from "../../../../server/dashboard-metrics";
 
 const parseRole = (

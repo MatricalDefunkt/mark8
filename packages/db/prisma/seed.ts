@@ -47,9 +47,9 @@ const ensureDefaultPlans = async (): Promise<void> => {
 
 const ensureDemoOrganization = async (): Promise<void> => {
   const adminUser = await prisma.user.upsert({
-    where: { email: "admin@demo.vada.local" },
+    where: { email: "admin@demo.mark8.local" },
     create: {
-      email: "admin@demo.vada.local",
+      email: "admin@demo.mark8.local",
       name: "Demo Admin",
       passwordHash: "replace-with-authjs-hash",
     },
@@ -59,9 +59,9 @@ const ensureDemoOrganization = async (): Promise<void> => {
   });
 
   const billingUser = await prisma.user.upsert({
-    where: { email: "billing@demo.vada.local" },
+    where: { email: "billing@demo.mark8.local" },
     create: {
-      email: "billing@demo.vada.local",
+      email: "billing@demo.mark8.local",
       name: "Demo Billing",
       passwordHash: "replace-with-authjs-hash",
     },
@@ -71,9 +71,9 @@ const ensureDemoOrganization = async (): Promise<void> => {
   });
 
   const salesUser = await prisma.user.upsert({
-    where: { email: "sales@demo.vada.local" },
+    where: { email: "sales@demo.mark8.local" },
     create: {
-      email: "sales@demo.vada.local",
+      email: "sales@demo.mark8.local",
       name: "Demo Sales",
       passwordHash: "replace-with-authjs-hash",
     },
@@ -83,9 +83,9 @@ const ensureDemoOrganization = async (): Promise<void> => {
   });
 
   const clientUser = await prisma.user.upsert({
-    where: { email: "client@demo.vada.local" },
+    where: { email: "client@demo.mark8.local" },
     create: {
-      email: "client@demo.vada.local",
+      email: "client@demo.mark8.local",
       name: "Demo Client",
       passwordHash: "replace-with-authjs-hash",
     },

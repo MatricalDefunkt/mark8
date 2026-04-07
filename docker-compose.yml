@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: vada
+      POSTGRES_DB: mark8
     ports:
       - "5432:5432"
     volumes:
@@ -22,7 +22,7 @@ services:
     env_file:
       - .env
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/vada
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/mark8
       REDIS_URL: redis://redis:6379
       NEXTAUTH_URL: http://localhost:3000
       APP_BASE_URL: http://localhost:3000
@@ -39,7 +39,7 @@ services:
     env_file:
       - .env
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/vada
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/mark8
       REDIS_URL: redis://redis:6379
     depends_on:
       - postgres
