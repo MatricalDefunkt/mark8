@@ -1,0 +1,26 @@
+{
+  "name": "vada",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "bun@1.2.15",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev --parallel",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "db:generate": "bun run --filter @vada/db db:generate",
+    "db:migrate": "bun run --filter @vada/db db:migrate",
+    "db:seed": "bun run --filter @vada/db db:seed"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "eslint": "^10.2.0",
+    "turbo": "^2.9.4",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}

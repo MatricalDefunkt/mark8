@@ -1,0 +1,17 @@
+node_modules
+.pnpm-store
+.turbo
+.next
+dist
+coverage
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea
+.vscode/settings.json
+*.log
+.prisma
+
+# runtime pid files from local start scripts
+*.pid
