@@ -16,7 +16,7 @@
     "@mark8/config": "workspace:*",
     "@mark8/contracts": "workspace:*",
     "@mark8/db": "workspace:*",
-    "next": "^14.2.15",
+    "next": "^16.2.2",
     "next-auth": "^5.0.0-beta.25",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
